@@ -45,10 +45,13 @@ function App() {
       <div className="title">
         <div className="flex flex-col gap-3">
           <div className="header">
-            <h1 className="text-3xl font-bold">Lamoda</h1>
+            <h1 className="text-4xl font-bold">Lamoda</h1>
           </div>
-          <div className="count__elem">
-            <p>Количество элементов {filteredCards.length}</p>
+          <div className="text-2xl">
+            <p>
+              Количество элементов:{" "}
+              <span className="text-gray-500"> {filteredCards.length} </span>
+            </p>
           </div>
           <div>
             <SearchBar onChange={setSearchValue} />
