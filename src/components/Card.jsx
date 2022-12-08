@@ -13,21 +13,20 @@ export default function Card({
         <img src={img} alt="card" />
       </div>
       <div>
-        <div>
-          <p>{name}</p>
-        </div>
-        <div>
-          <p>{description}</p>
-        </div>
-        <div>
-          <p>Цвет: {color}</p>
-        </div>
-        <div>
-          <p>Рейтинг: {rating}</p>
-        </div>
-        <div>
-          <p>Цена: ${price}</p>
-        </div>
+        <p className="text-center font-semibold">{name}</p>
+        <p>{description}</p>
+
+        <p>
+          <span className="text-gray-500">Цвет: </span>
+          {color}
+        </p>
+        <p>
+          <span className="text-gray-500">Рейтинг: </span>
+          {rating}
+        </p>
+        <p>
+          <span className="text-gray-500">Цена: </span>${price}
+        </p>
       </div>
     </div>
   );
